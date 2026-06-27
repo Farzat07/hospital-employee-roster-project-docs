@@ -47,7 +47,7 @@ schedule would help keep things on track.
 4. The system should… be easy to access.
 5. The system should… check the schedule for missing requirements before output.
 
-## 7. Constraints and Assumption**
+## 7. Constraints and Assumption
 
 ### Constraints
 
