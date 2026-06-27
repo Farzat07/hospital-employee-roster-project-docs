@@ -1,0 +1,9 @@
+# Hospital Employee Roster
+
+Project documentation for the Hospital Employee Roster project. An employee
+roster is a centralized schedule or list that details which staff members are
+assigned to specific shifts, days, times. This project aims to automate the
+roster generation for an emergency department at a local hospital.
+
+Check out the [Scenario Analysis Worksheet](./ScenarioAnalysis.md) and the
+[Stakeholder Analysis Document](./StakeholderAnalysis.md).
