@@ -14,9 +14,9 @@ Team Hospital
 
 - Abdurrahman Farzat : Developer
 - Ayden Fritz        : Project Manager
-- Paul Daley         : ???
+- Paul Daley         : Tester
 - Rio Dye            : Business Analyst
-- Sam Buckland       : ???
+- Sam Buckland       : UX / UI Designer
 
 ## 1. Project Purpose / Business Need
 
@@ -41,97 +41,84 @@ and patients:
 
 ## 2. Project Description / Scope Statement
 
-*Provide a short description of the solution.  
-Include:*
+### High-level features
 
-- *High-level features  
-  *
+- Doctor profile management
+- Automated schedule generation
+- Vacation and availability tracking
+- Shift preference management
+- Monthly schedule viewing and printing
+- Coverage validation and conflict checking
 
-- *What’s in scope  
-  *
+### What’s in scope
 
-- *What’s explicitly out of scope (important for sophomore-level
-  expectations)  
-  *
+- Doctor information management
+- Shift assignment automation
+- Vacation and busy period requests
+- Schedule generation and printing
+- Basic reporting and schedule viewing
 
-## ***3. Objectives and Success Criteria***
+### What’s explicitly out of scope
 
-***Objectives***
+- Payroll processing
+- Integration with hospital electronic medical record systems
+- Mobile application development
+- Real-time staffing adjustments during emergencies
+- Nurse and support staff scheduling
 
-- *Objective 1  
-  *
+## 3. Objectives and Success Criteria
 
-- *Objective 2  
-  *
+### Objectives
 
-- *Objective 3  
-  *
+1. Automate scheduling for every month.
+2. Ensure all shifts are covered.
+3. Consider doctor preferences and fair workload distribution.
 
-***Success Criteria***
+### Success Criteria
 
-- *Measurable outcomes (e.g., “POS prototype processes 3 sample
-  transactions,” “dashboard reports totals,” etc.)  
-  *
+1. Complete and generate monthly schedule, viewable and printable.
+2. Ensure no repeat shifts for a 24-hour period for any one doctor.
+3. Honor vacation requests.
+4. Guarantee one weekend off per month for every doctor.
 
-## ***4. Key Deliverables***
+## 4. Key Deliverables
 
-*Examples:*
+- Requirements document.
+- Use case and workflow diagram.
+- System architecture diagram.
+- Database design.
+- Early prototype.
+- Test plan and test cases.
+- Final system demo.
+- Project report and presentation.
 
-- *Requirements document  
-  *
+## 5. Assumptions, Constraints, and Risks
 
-- *Architecture diagram  
-  *
+### Assumptions
 
-- *Early prototype  
-  *
+- Team meets weekly
+- Tools (IDE, DB, collaboration apps) function as expected
+- Stakeholder feedback available via instructor
+- Doctors provide accurate availability information
+- Enough doctors to cover all shifts
 
-- *Test plan  
-  *
+### Constraints
 
-- *Final system demo  
-  *
+- 10-week timeline.
+- Limited prior coding experience.
+- Virtual communication only.
+- Staffing 24/7.
+- 3 fixed 8-hour shifts.
+- No more than one shift in 24 hours.
+- Honored vacation requests.
 
-- *Project report  
-  *
+### Risks
 
-## ***5. Assumptions, Constraints, and Risks***
-
-### ***Assumptions***
-
-- *Team meets weekly  
-  *
-
-- *Tools (IDE, DB, collaboration apps) function as expected  
-  *
-
-- *Stakeholder feedback available via instructor  
-  *
-
-### ***Constraints***
-
-- *10-week timeline  
-  *
-
-- *Limited prior coding experience  
-  *
-
-- *Virtual communication only  
-  *
-
-### ***Risks***
-
-- *Loss of engagement  
-  *
-
-- *Scheduling conflicts  
-  *
-
-- *Scope creep  
-  *
-
-- *Technical unfamiliarity (DB, front-end, security)  
-  *
+- Loss of engagement.
+- Scheduling conflicts (both for the doctors and the project team).
+- Scope creep.
+- Technical unfamiliarity (DB, front-end, security).
+- Scheduling errors.
 
 ## 6. Stakeholders
 
@@ -163,8 +150,8 @@ Patients
 | Project Manager    | Communication, schedule, status   | Ayden Fritz        |
 | Business Analyst   | Requirements, diagrams            | Rio Dye            |
 | Developer          | Coding, integration               | Abdurrahman Farzat |
-| Tester             | Test cases, defect tracking       |                    |
-| UX / UI            | User interface                    |                    |
+| Tester             | Test cases, defect tracking       | Paul Daley         |
+| UX / UI            | User interface                    | Sam Buckland       |
 
 ## 8. Approval
 
