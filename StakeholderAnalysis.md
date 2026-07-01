@@ -35,7 +35,7 @@
 
 | **Stakeholder** | **Needs / Requirements** | **Expectations of the Project Outcome** | **Potential Conflicts / Concerns** |
 | :--: | :--: | :--: | :--: |
-| Hopsital manager | Full shift coverage, printable schedules | Automated scheduling | May not fulfill all staffing needs |
+| Hospital manager | Full shift coverage, printable schedules | Automated scheduling | May not fulfill all staffing needs |
 | Doctors | Fair schedules, vacation, time preferences | Better work-life balance | Preferences conflicting with staffing requirements |
 | IT department | Stable and secure system | Easy maintenance | Complex implementation |
 | Patients | Adequate staffing | Consistent and reliable care | Understaffing |
@@ -77,7 +77,7 @@
 | **Risk Description** | **Stakeholder(s) Involved** | **Likelihood** | **Impact** | **Mitigation Strategy** |
 | :--: | :--: | :--: | :--: | :--: |
 | Refusal to use automated system | Doctors | Medium | High | Information gathering and testing to their needs |
-| Incomplete or innacurate scheduling | Hospitla manager | Medium | High | Detailed requirement reviews |
+| Incomplete or inaccurate scheduling | Hospital manager | Medium | High | Detailed requirement reviews |
 | Technical issues delay project | IT department | Medium | Medium | Stick as closely to the schedule as possible |
 | Doctor preferences vs staffing needs | Doctors, Hospital Management, (Patients?) | High | Medium | Priority rules and fairness |
 

@@ -124,24 +124,24 @@ and patients:
 
 ### Client (Instructor acting as customer)
 
-Hospital ED Manager (Andrew Mooney)
+- Hospital ED Manager (Andrew Mooney)
 
 ### End-users (scenario-based)
 
-Hospital ED Manager  
-ED Doctors
+- Hospital ED Manager
+- ED Doctors
 
 ### Student development team
 
-Abdurrahman Farzat  
-Ayden Fritz  
-Paul Daley  
-Rio Dye  
-Sam Buckland
+- Abdurrahman Farzat
+- Ayden Fritz
+- Paul Daley
+- Rio Dye
+- Sam Buckland
 
 ### Indirect stakeholders
 
-Patients
+- Patients
 
 ## 7. Roles & Responsibilities
 
