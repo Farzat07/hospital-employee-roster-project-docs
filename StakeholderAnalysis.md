@@ -24,7 +24,7 @@
 
 ## 1. Stakeholder Identification Table
 
-| **Stakeholder Name / Group** | **Role / Title** | **Type (Primary, Secondary, Internal, External)** | **Interest in Project** | **Influence/Power Level (High/Med/Low)** | **Expected Impact on Project** |
+| **Stakeholder Name / Group** | **Role / Title** | **Type** | **Interest in Project** | **Influence/Power Level** | **Expected Impact on Project** |
 | :--: | :--: | :--: | :--: | :--: | :--: |
 | Hospital manager | -- | Primary | Faster scheduling, better visibility | High | Approves final deliverable |
 | Doctors | -- | Primary | More customization/flexibility | Med | Provides requirements and uses system |
@@ -65,10 +65,11 @@
 
 ## 4. Engagement Strategy
 
-| **Stakeholder** | **Engagement Level (Consult, Inform, Involve, Manage Closely)** | **Communication Method(s)** | **Frequency** | **Owner (Team Member Responsible)** |
+| **Stakeholder** | **Engagement Level** | **Communication Method(s)** | **Frequency** | **Owner (Team Member Responsible)** |
 | :--: | :--: | :--: | :--: | :--: |
 | Hospital manager | Manage closely | Meetings, status reports | Weekly | Project Manager |
-| Doctors | Involve | Surveys, workshops, demonstrations | Bi-weekly | Business Analyst |
+| Doctor currently responsible for schedules | Consult | Interviews, meetings | Bi-weekly | Business Analyst, Developer |
+| Doctors | Involve | Surveys, workshops, demonstrations | Weekly | Business Analyst |
 | IT department | Involve | Technical meetings | Weekly | Developer |
 | Patients | Inform | Indirect hospital updates | -- | Hospital administration |
 
