@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="2" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+
+  <text x="50" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Emergency Department Roster System</text>
+  <text x="50" y="68" font-family="Arial, sans-serif" font-size="14" fill="#64748b">High-Level Multi-Tier System Architecture &amp; Deployment Topology</text>
+
+  <g id="client-layer">
+    <rect x="30" y="110" width="230" height="580" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="145" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#475569" text-anchor="middle">CLIENT / UI LAYER</text>
+    
+    <text x="145" y="155" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">React Web Applications</text>
+
+    <g transform="translate(50, 180)">
+      <rect width="190" height="180" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+      <circle cx="95" cy="40" r="16" fill="#2563eb"/>
+      <path d="M75 72 C75 58, 115 58, 115 72 Z" fill="#2563eb"/>
+      <text x="95" y="100" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Doctor Portal Interface</text>
+      <text x="95" y="120" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Role-Based Dashboard</text>
+      <rect x="20" y="135" width="150" height="30" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="95" y="153" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">Set Prefs / View Schedule</text>
+    </g>
+
+    <g transform="translate(50, 480)">
+      <rect width="190" height="180" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+      <circle cx="95" cy="40" r="16" fill="#db2777"/>
+      <path d="M75 72 C75 58, 115 58, 115 72 Z" fill="#db2777"/>
+      <text x="95" y="100" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#1e293b" text-anchor="middle">Manager Dashboard</text>
+      <text x="95" y="120" font-family="Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Administrative Controls</text>
+      <rect x="20" y="135" width="150" height="30" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="95" y="153" font-family="Arial, sans-serif" font-size="11" fill="#334155" text-anchor="middle">Trigger Auto-Generation</text>
+    </g>
+  </g>
+
+  <g id="security-boundary">
+    <line x1="290" y1="110" x2="290" y2="690" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="6 4"/>
+    <rect x="266" y="290" width="48" height="180" rx="6" fill="#ef4444" filter="url(#shadow)"/>
+    <text x="290" y="368" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle" transform="rotate(-90, 290, 365)">SECURITY BOUNDARY</text>
+    <text x="290" y="450" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">HTTPS</text>
+  </g>
+
+  <g id="cloud-infrastructure">
+    <rect x="320" y="110" width="750" height="580" rx="12" fill="#fafafa" stroke="#0284c7" stroke-width="2" stroke-dasharray="8 4" filter="url(#shadow)"/>
+    <rect x="320" y="110" width="220" height="30" rx="4" fill="#0284c7"/>
+    <text x="335" y="130" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff">CLOUD SYSTEM BOUNDARY (VPC)</text>
+
+    <rect x="350" y="160" width="690" height="500" rx="8" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.5"/>
+    <text x="365" y="185" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">Containerized Docker Virtual Network</text>
+
+    <g id="backend-container" transform="translate(380, 210)">
+      <rect width="280" height="420" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+      
+      <rect width="280" height="35" rx="4" fill="#e0f2fe"/>
+      <text x="140" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0369a1" text-anchor="middle">Docker Container: Python Web Server</text>
+      
+      <rect x="20" y="55" width="240" height="45" rx="4" fill="#f8fafc" stroke="#94a3b8"/>
+      <text x="140" y="73" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">Flask REST API Application</text>
+      <text x="140" y="90" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Routing Layer &amp; Controller Endpoints</text>
+
+      <rect x="20" y="115" width="240" height="40" rx="4" fill="#fee2e2" stroke="#f87171"/>
+      <text x="140" y="132" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#991b1b" text-anchor="middle">RBAC / Access Guard Filter</text>
+      <text x="140" y="147" font-family="Arial, sans-serif" font-size="9" fill="#b91c1c" text-anchor="middle">(Isolates Doctor vs. Manager Operations)</text>
+
+      <rect x="20" y="175" width="240" height="225" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <text x="140" y="195" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">BASIC BACKEND LOGIC SUITE</text>
+      
+      <rect x="35" y="210" width="210" height="35" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="140" y="232" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#1e293b" text-anchor="middle">Profile &amp; Availability Manager</text>
+
+      <rect x="35" y="255" width="210" height="45" rx="4" fill="#eff6ff" stroke="#bfdbfe"/>
+      <text x="140" y="274" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">Roster Generation Engine</text>
+      <text x="140" y="291" font-family="Arial, sans-serif" font-size="9" fill="#2563eb" text-anchor="middle">(Algorithmic Matrix Allocation Loop)</text>
+
+      <rect x="35" y="310" width="210" height="35" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="140" y="332" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">Constraint Verification Engine</text>
+
+      <rect x="35" y="355" width="210" height="35" rx="4" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="140" y="377" font-family="Arial, sans-serif" font-size="11" fill="#1e293b" text-anchor="middle">PDF/Excel Document Export Engine</text>
+    </g>
+
+    <g id="database-container" transform="translate(770, 260)">
+      <rect width="230" height="330" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2" filter="url(#shadow)"/>
+      
+      <rect width="230" height="35" rx="4" fill="#e0f2fe"/>
+      <text x="115" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#0369a1" text-anchor="middle">Docker Container: Database</text>
+
+      <g transform="translate(80, 50)">
+        <ellipse cx="35" cy="15" rx="35" ry="12" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+        <path d="M0 15 L0 55 A35 12 0 0 0 70 55 L70 15 Z" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <ellipse cx="35" cy="55" rx="35" ry="12" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <text x="35" y="40" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#1e293b" text-anchor="middle">PostgreSQL</text>
+      </g>
+
+      <rect x="15" y="130" width="200" height="180" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="115" y="148" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#64748b" text-anchor="middle">RELATIONAL TABLE ENTITIES</text>
+      
+      <rect x="25" y="160" width="180" height="25" rx="3" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="35" y="177" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="700">👤 User Accounts / Profiles</text>
+
+      <rect x="25" y="195" width="180" height="25" rx="3" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="35" y="212" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="700">🌴 Vacation Tracking Logs</text>
+
+      <rect x="25" y="230" width="180" height="25" rx="3" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="35" y="247" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="700">⚙️ Shift Preference Inputs</text>
+
+      <rect x="25" y="265" width="180" height="25" rx="3" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="35" y="282" font-family="Arial, sans-serif" font-size="11" fill="#334155" font-weight="700">📅 Compiled Monthly Rosters</text>
+    </g>
+  </g>
+
+  <path d="M 240 270 L 266 270" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 240 570 L 266 570" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <path d="M 314 360 L 380 360" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="346" y="350" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#2563eb" text-anchor="middle">JSON/API</text>
+
+  <path d="M 660 420 L 770 420" stroke="#475569" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="715" y="412" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#475569" text-anchor="middle">SQL Connections</text>
+  <text x="715" y="440" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Port 5432 / TCP</text>
+
+  <g id="legend" transform="translate(50, 705)">
+    <rect width="1000" height="35" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="15" y="22" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#475569">LEGEND:</text>
+    
+    <rect x="80" y="12" width="15" height="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="102" y="22" font-family="Arial, sans-serif" font-size="11" fill="#475569">Presentation Tier</text>
+
+    <line x1="210" y1="18" x2="235" y2="18" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 2"/>
+    <text x="242" y="22" font-family="Arial, sans-serif" font-size="11" fill="#475569">Security Isolation Line</text>
+
+    <rect x="380" y="12" width="15" height="12" fill="#fafafa" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <text x="402" y="22" font-family="Arial, sans-serif" font-size="11" fill="#475569">Cloud Infrastructure (VPC)</text>
+
+    <rect x="570" y="12" width="15" height="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <text x="592" y="22" font-family="Arial, sans-serif" font-size="11" fill="#475569">Docker Containers</text>
+
+    <rect x="710" y="12" width="15" height="12" fill="#fee2e2" stroke="#f87171" stroke-width="1"/>
+    <text x="732" y="22" font-family="Arial, sans-serif" font-size="11" fill="#475569">Role-Based Access Guard</text>
+
+    <rect x="880" y="12" width="15" height="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="902" y="22" font-family="Arial, sans-serif" font-size="11" fill="#475569">Logic Core Suite</text>
+  </g>
+</svg>
