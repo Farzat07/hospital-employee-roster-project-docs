@@ -31,7 +31,7 @@
 | 5.4 | PostgreSQL container | Construct a docker-compose entry which builds the database server | Developer | 3 hours | 5.2 |
 | 5.5 | Python back-end | Build the Flask back-end application that handles the logic and serves JSON APIs | Developer | 5 days | 5.3 |
 | 5.6 | Back-end CI/CD | Build a CI/CD pipeline to automate back-end deployment | Developer | 4 hours | 5.5 |
-| 5.7 | React.js app | Write the front-end react.js application | Developer | 3 days | 5.5 |
+| 5.7 | React.js app | Write the front-end react.js application | Developer | 3 days | 5.1, 5.5 |
 | 5.8 | Front-end CI/CD | Build a CI/CD pipeline to automate front-end deployment | Developer | 3 hours | 5.7 |
 | **6.0** | **Testing & Review** | Integration + feedback | Tester | | |
 | 6.1 | Test Plan Creation | Define test cases & criteria | Tester | | 4.0 |
