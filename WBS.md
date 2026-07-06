@@ -1,4 +1,4 @@
-# **Work Breakdown Structure (WBS)
+# Work Breakdown Structure (WBS)
 
 <!-- markdownlint-configure-file
 {
