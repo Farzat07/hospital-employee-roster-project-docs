@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Use Case Architecture Diagram - Emergency Department Roster System</title>
+  <desc id="desc">UML-style use case diagram showing Hospital Manager and Doctor actors interacting with an automated emergency department roster system.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .system { fill: #ffffff; stroke: #2563eb; stroke-width: 2.5; }
+      .system-title { font: 700 24px Arial, Helvetica, sans-serif; fill: #1e3a8a; text-anchor: middle; }
+      .section-title { font: 700 15px Arial, Helvetica, sans-serif; fill: #475569; text-anchor: middle; }
+      .actor-label { font: 700 18px Arial, Helvetica, sans-serif; fill: #0f172a; text-anchor: middle; }
+      .actor-line { stroke: #0f172a; stroke-width: 2.4; stroke-linecap: round; }
+      .usecase { fill: #eff6ff; stroke: #2563eb; stroke-width: 2; }
+      .usecase-core { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2.4; }
+      .usecase-input { fill: #ecfdf5; stroke: #059669; stroke-width: 2; }
+      .usecase-output { fill: #fff7ed; stroke: #ea580c; stroke-width: 2; }
+      .text { font: 600 14px Arial, Helvetica, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 500 12px Arial, Helvetica, sans-serif; fill: #475569; text-anchor: middle; dominant-baseline: middle; }
+      .association { stroke: #334155; stroke-width: 1.7; fill: none; }
+      .include { stroke: #64748b; stroke-width: 1.4; stroke-dasharray: 7 6; fill: none; marker-end: url(#arrow); }
+      .include-label { font: italic 12px Arial, Helvetica, sans-serif; fill: #64748b; text-anchor: middle; }
+      .note { fill: #fefce8; stroke: #ca8a04; stroke-width: 1.5; }
+      .note-text { font: 500 12px Arial, Helvetica, sans-serif; fill: #713f12; }
+    </style>
+
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1200" height="820"/>
+
+  <!-- System Boundary -->
+  <rect class="system" x="250" y="55" width="700" height="710" rx="24"/>
+  <text class="system-title" x="600" y="92">Emergency Department Roster System</text>
+  <text class="section-title" x="600" y="120">Automated monthly shift scheduling for 3 daily 8-hour shifts</text>
+
+  <!-- Actor: Hospital Manager -->
+  <circle cx="115" cy="230" r="20" fill="none" class="actor-line"/>
+  <line x1="115" y1="250" x2="115" y2="302" class="actor-line"/>
+  <line x1="75" y1="265" x2="155" y2="265" class="actor-line"/>
+  <line x1="115" y1="302" x2="78" y2="350" class="actor-line"/>
+  <line x1="115" y1="302" x2="152" y2="350" class="actor-line"/>
+  <text class="actor-label" x="115" y="384">Hospital</text>
+  <text class="actor-label" x="115" y="407">Manager</text>
+
+  <!-- Actor: Doctor -->
+  <circle cx="1085" cy="245" r="20" fill="none" class="actor-line"/>
+  <line x1="1085" y1="265" x2="1085" y2="327" class="actor-line"/>
+  <line x1="1045" y1="290" x2="1125" y2="290" class="actor-line"/>
+  <line x1="1085" y1="327" x2="1048" y2="375" class="actor-line"/>
+  <line x1="1085" y1="327" x2="1122" y2="375" class="actor-line"/>
+  <text class="actor-label" x="1085" y="411">Doctor</text>
+
+  <!-- Core Use Case -->
+  <ellipse class="usecase-core" cx="600" cy="205" rx="150" ry="48"/>
+  <text class="text" x="600" y="194">Generate Monthly</text>
+  <text class="text" x="600" y="213">Schedule</text>
+
+  <!-- Manager Input Use Cases -->
+  <ellipse class="usecase-input" cx="410" cy="330" rx="128" ry="42"/>
+  <text class="text" x="410" y="319">Define Staffing</text>
+  <text class="text" x="410" y="338">Requirements</text>
+
+  <ellipse class="usecase-input" cx="405" cy="440" rx="128" ry="42"/>
+  <text class="text" x="405" y="429">Specify Busy</text>
+  <text class="text" x="405" y="448">Periods / Demand</text>
+
+  <!-- Doctor Input Use Cases -->
+  <ellipse class="usecase-input" cx="790" cy="320" rx="128" ry="42"/>
+  <text class="text" x="790" y="309">Set Preferred</text>
+  <text class="text" x="790" y="328">Shift</text>
+
+  <ellipse class="usecase-input" cx="790" cy="430" rx="128" ry="42"/>
+  <text class="text" x="790" y="419">Declare Busy</text>
+  <text class="text" x="790" y="438">Period</text>
+
+  <ellipse class="usecase-input" cx="790" cy="540" rx="128" ry="42"/>
+  <text class="text" x="790" y="529">Request Vacation</text>
+  <text class="text" x="790" y="548">Period</text>
+
+  <!-- Included Scheduling Rules -->
+  <ellipse class="usecase" cx="585" cy="340" rx="118" ry="38"/>
+  <text class="text" x="585" y="331">Fill All</text>
+  <text class="text" x="585" y="350">Shifts</text>
+
+  <ellipse class="usecase" cx="585" cy="438" rx="118" ry="38"/>
+  <text class="text" x="585" y="429">Apply Rest Rules</text>
+  <text class="small" x="585" y="450">Max 1 shift / 24h</text>
+
+  <ellipse class="usecase" cx="585" cy="536" rx="118" ry="38"/>
+  <text class="text" x="585" y="527">Guarantee Weekend</text>
+  <text class="text" x="585" y="546">Time Off</text>
+
+  <ellipse class="usecase" cx="405" cy="610" rx="125" ry="38"/>
+  <text class="text" x="405" y="601">Balance Workload</text>
+  <text class="small" x="405" y="622">fair + compensating shifts</text>
+
+  <ellipse class="usecase" cx="585" cy="665" rx="128" ry="38"/>
+  <text class="text" x="585" y="656">Assign Extra Doctors</text>
+  <text class="small" x="585" y="677">e.g., busy mornings</text>
+
+  <ellipse class="usecase-output" cx="790" cy="665" rx="128" ry="38"/>
+  <text class="text" x="790" y="656">View / Print Clean</text>
+  <text class="text" x="790" y="675">Monthly Table</text>
+
+  <!-- Associations -->
+  <line class="association" x1="155" y1="255" x2="450" y2="205"/>
+  <line class="association" x1="155" y1="278" x2="286" y2="330"/>
+  <line class="association" x1="155" y1="302" x2="668" y2="665"/>
+  <line class="association" x1="155" y1="326" x2="286" y2="440"/>
+
+  <line class="association" x1="1045" y1="285" x2="918" y2="320"/>
+  <line class="association" x1="1045" y1="296" x2="918" y2="430"/>
+  <line class="association" x1="1045" y1="308" x2="918" y2="540"/>
+  <line class="association" x1="1045" y1="322" x2="906" y2="665"/>
+
+  <!-- Include Relationships -->
+  <path class="include" d="M598 253 C595 278, 590 296, 586 302"/>
+  <text class="include-label" x="628" y="283">&lt;&lt;include&gt;&gt;</text>
+
+  <path class="include" d="M600 253 C602 315, 598 365, 590 400"/>
+  <text class="include-label" x="647" y="352">&lt;&lt;include&gt;&gt;</text>
+
+  <path class="include" d="M607 253 C625 350, 625 470, 598 500"/>
+  <text class="include-label" x="660" y="462">&lt;&lt;include&gt;&gt;</text>
+
+  <path class="include" d="M560 250 C500 350, 430 495, 407 572"/>
+  <text class="include-label" x="458" y="520">&lt;&lt;include&gt;&gt;</text>
+
+  <path class="include" d="M610 253 C665 392, 620 570, 592 627"/>
+  <text class="include-label" x="650" y="610">&lt;&lt;include&gt;&gt;</text>
+
+  <path class="include" d="M658 249 C710 330, 766 535, 785 627"/>
+  <text class="include-label" x="760" y="610">&lt;&lt;include&gt;&gt;</text>
+
+  <!-- Input / Constraint Influence Links -->
+  <path class="include" d="M496 330 C520 315, 548 295, 575 253"/>
+  <text class="include-label" x="505" y="292">input</text>
+
+  <path class="include" d="M498 440 C520 490, 540 590, 570 627"/>
+  <text class="include-label" x="522" y="585">input</text>
+
+  <path class="include" d="M748 358 C718 405, 666 595, 610 630"/>
+  <text class="include-label" x="700" y="595">preference</text>
+
+  <path class="include" d="M755 466 C690 525, 580 573, 452 596"/>
+  <text class="include-label" x="650" y="570">reduced density</text>
+
+  <path class="include" d="M746 508 C700 460, 670 405, 630 252"/>
+  <text class="include-label" x="717" y="392">exclusion</text>
+
+  <!-- Note -->
+  <rect class="note" x="80" y="665" width="245" height="102" rx="12"/>
+  <text class="note-text" x="98" y="690">Scheduling constraints:</text>
+  <text class="note-text" x="98" y="711">• 3 shifts/day × 8 hours</text>
+  <text class="note-text" x="98" y="732">• mornings can need 2 doctors</text>
+  <text class="note-text" x="98" y="753">• nights usually need 1 doctor</text>
+</svg>
