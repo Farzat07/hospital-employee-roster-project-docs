@@ -1,0 +1,17 @@
+schedule_entry_id,schedule_id,work_date,shift,physician_id,assignment_source
+1,1,2026-08-01,morning,101,generated
+2,1,2026-08-01,morning,104,generated
+3,1,2026-08-01,evening,102,generated
+4,1,2026-08-01,evening,105,generated
+5,1,2026-08-01,night,103,generated
+6,1,2026-08-02,morning,107,generated
+7,1,2026-08-02,morning,101,generated
+8,1,2026-08-02,evening,102,generated
+9,1,2026-08-02,evening,105,generated
+10,1,2026-08-02,night,106,generated
+11,1,2026-08-03,morning,104,generated
+12,1,2026-08-03,morning,107,generated
+13,1,2026-08-03,evening,102,generated
+14,1,2026-08-03,evening,105,generated
+15,1,2026-08-03,night,108,generated
+16,1,2026-08-05,night,108,manual_override

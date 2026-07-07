@@ -1,0 +1,10 @@
+account_id,full_name,display_name,email,password_hash,role,department_id,is_active
+1,Andrew Mooney,Andrew,manager.ed@hospital.example.com,$2b$12$dummyhash,manager,1,true
+101,Dr. Sarah Jenkins,Sarah,sarah@hospital.example.com,$2b$12$hash,physician,1,true
+102,Dr. Michael Patel,Mike,michael@hospital.example.com,$2b$12$hash,physician,1,true
+103,Dr. Emma Wilson,Emma,emma@hospital.example.com,$2b$12$hash,physician,1,true
+104,Dr. David Chen,David,david@hospital.example.com,$2b$12$hash,physician,1,true
+105,Dr. Olivia Martin,Olivia,olivia@hospital.example.com,$2b$12$hash,physician,1,true
+106,Dr. James Brown,James,james@hospital.example.com,$2b$12$hash,physician,1,true
+107,Dr. Sophia Garcia,Sophia,sophia@hospital.example.com,$2b$12$hash,physician,1,true
+108,Dr. William Taylor,Will,william@hospital.example.com,$2b$12$hash,physician,1,true
