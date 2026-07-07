@@ -19,3 +19,6 @@ Project Management Artifacts stored:
   [mermaid](https://mermaid.js.org/syntax/entityRelationshipDiagram.html).
   An [SVG](ERD.svg) version is also available to embed in documents.
 - [CRUD Operation Plan](CRUD_OperationPlan.md).
+
+There is also a [sample dataset](sample_data/) to facilitate early development
+and testing.
