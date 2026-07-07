@@ -14,3 +14,8 @@ Project Management Artifacts stored:
 - [Use Case Architecture](UseCaseArchitecture.md).
 - [System Architecture Diagram](system-architecture-diagram.svg).
 - [Work Breakdown Structure](WBS.md).
+- [Database Schema](DB_Schema.md).
+- [Entity Relationship Diagram](ERD.mmd) implemented using
+  [mermaid](https://mermaid.js.org/syntax/entityRelationshipDiagram.html).
+  An [SVG](ERD.svg) version is also available to embed in documents.
+- [CRUD Operation Plan](CRUD_OperationPlan.md).
