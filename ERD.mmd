@@ -1,0 +1,78 @@
+erDiagram
+
+    DEPARTMENTS {
+        int department_id PK
+        string department_name
+        boolean is_active
+    }
+
+    DEPARTMENT_SETTINGS {
+        int department_id PK, FK
+        int morning_required_physicians
+        int evening_required_physicians
+        int night_required_physicians
+        int min_shifts_per_physician
+        int max_shifts_per_physician
+    }
+
+    ACCOUNTS {
+        int account_id PK
+        string full_name
+        string display_name
+        string email UK
+        string password_hash
+        account_role role
+        int department_id FK
+        boolean is_active
+    }
+
+    SHIFT_PREFERENCES {
+        int physician_id PK, FK
+        int morning_preference
+        int evening_preference
+        int night_preference
+    }
+
+    AVAILABILITY_REQUESTS {
+        int request_id PK
+        int physician_id FK
+        date start_date
+        date end_date
+        availability_request_type request_type
+        request_status status
+        int reviewed_by_account_id FK
+        timestamp reviewed_at
+        string notes
+    }
+
+    SCHEDULES {
+        int schedule_id PK
+        int department_id FK
+        int schedule_month
+        int schedule_year
+        schedule_status status
+        int generated_by_account_id FK
+        timestamp generated_at
+        timestamp finalized_at
+    }
+
+    SCHEDULE_ENTRIES {
+        int schedule_entry_id PK
+        int schedule_id FK
+        date work_date
+        shift_type shift
+        int physician_id FK
+        assignment_source_type assignment_source
+    }
+
+    DEPARTMENTS ||--|| DEPARTMENT_SETTINGS : has
+    DEPARTMENTS ||--o{ ACCOUNTS : contains
+    DEPARTMENTS ||--o{ SCHEDULES : owns
+
+    ACCOUNTS ||--o| SHIFT_PREFERENCES : has
+    ACCOUNTS ||--o{ AVAILABILITY_REQUESTS : submits
+    ACCOUNTS ||--o{ AVAILABILITY_REQUESTS : reviews
+    ACCOUNTS ||--o{ SCHEDULES : generates
+    ACCOUNTS ||--o{ SCHEDULE_ENTRIES : assigned_to
+
+    SCHEDULES ||--o{ SCHEDULE_ENTRIES : contains
