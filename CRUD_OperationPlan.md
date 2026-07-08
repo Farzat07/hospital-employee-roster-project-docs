@@ -38,8 +38,6 @@
 
 ## 5. Availability Requests
 
-### Vacation Request Example
-
 | Operation | Example                                |
 | --------- | -------------------------------------- |
 | Create    | Physician requests vacation.           |

@@ -34,7 +34,7 @@ Color codes:
 | :black_circle: **5.0** | **MVP Development** | Developing the actual application | Developer, UX/UI Designer | 14 days | 4.0 |
 | :black_circle: 5.1 | HTML+CSS templates | Translating wireframes to reusable HTML components | UX/UI Designer | 3 days | 4.1 |
 | :green_circle: 5.2 | Database Schema | Design the SQL schema for the application | Developer | 5 hours | 4.2 |
-| :green_circle: 5.3 | Draft Data | Prepare dummy data to fascilitate development | Developer | 4 hours | 5.2 |
+| :green_circle: 5.3 | Draft Data | Prepare dummy data to facilitate development | Developer | 4 hours | 5.2 |
 | :black_circle: 5.4 | PostgreSQL container | Construct a docker-compose entry which builds the database server | Developer | 3 hours | 5.2 |
 | :black_circle: 5.5 | Python back-end | Build the Flask back-end application that handles the logic and serves JSON APIs | Developer | 5 days | 5.3 |
 | :black_circle: 5.6 | Back-end CI/CD | Build a CI/CD pipeline to automate back-end deployment | Developer | 4 hours | 5.5 |
