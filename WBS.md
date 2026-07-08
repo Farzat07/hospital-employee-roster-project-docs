@@ -6,6 +6,13 @@
 }
 -->
 
+Color codes:
+
+- :green_circle:  = Completed tasks
+- :black_circle:  = Initial tasks
+- :red_circle:    = Late or problematic tasks
+- :purple_circle: = Tasks added after project start
+
 | **WBS ID** | **Task Name** | **Description** | **Owner** | **Estimated Duration** | **Dependencies** |
 | :--------: | :-----------: | :-------------: | :-------: | :-: | :-: |
 | :green_circle: **1.0** | **Project Planning** | Overall planning tasks | Project Manager | 6 days | |
