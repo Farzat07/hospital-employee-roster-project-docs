@@ -1,0 +1,19 @@
++-----------------+-----------------+---------------+----------+------------------+
+| HOSPITAL ROSTER | Master Schedule | Control Panel | Settings |    [ A. Mooney ] |
+|-----------------+-----------------+---------------+----------+------------------|
+|                                                                                 |
+|   ADMINISTRATIVE CONTROL PANEL                                                  |
+|                                                                                 |
+|      MANAGE PHYSICIAN PROFILES                   GENERATE NEW ROSTER            |
+|   +---------------+-----------+---------+     +----------------------------+    |
+|   | Name          | Role      | Status  |     | Target Month: [ August v ] |    |
+|   |---------------|-----------|---------|     | Target Year:  [ 2026   v ] |    |
+|   | Jenkins, S.   | Physician | Active  |     |                            |    |
+|   | Smith, J.     | Physician | Active  |     | +------------------------+ |    |
+|   |---------------+-----------+---------|     | |   GENERATE SCHEDULE    | |    |
+|   | + Add New Physician Account         |     | +------------------------+ |    |
+|   +-------------------------------------+     +----------------------------+    |
+|                                                                                 |
+|   Recent Roster Status:                                                         |
+|   - July 2026: [ FINALIZED ]                 - Aug 2026: [ DRAFT ]              |
++---------------------------------------------------------------------------------+

@@ -1,0 +1,18 @@
++-----------------+--------------+-------------+---------------+-----------------+
+| HOSPITAL ROSTER | My Dashboard | My Schedule | Team Schedule | [ Dr. Jenkins ] |
++-----------------+--------------+-------------+---------------+-----------------+
+|                                                                                |
+|  AVAILABILITY & PREFERENCES                                                    |
+|                                                                                |
+|  Shift Preference "(0 = Low, 5 = High)"     Request Time Off                   |
+|  +------------------------------------+     +------------------------------+   |
+|  | "Morning Shift:" [ 5 v ]           |     | "Start Date:"[ "DD/MM/YYYY"] |   |
+|  | "Evening Shift:" [ 2 v ]           |     | "End Date:"  [ "DD/MM/YYYY"] |   |
+|  | "Night Shift:"   [ 0 v ]           |     | "Type:"      [ Vacation  v ] |   |
+|  |                                    |     |                              |   |
+|  |      [ SAVE PREFERENCES ]          |     |      [ SUBMIT REQUEST ]      |   |
+|  +------------------------------------+     +------------------------------+   |
+|                                                                                |
+|  My Pending Requests:                                                          |
+|  - Aug 9 to Aug 11: [ PENDING ]             - Sep 20 to Sep 22: [ APPROVED ]   |
++--------------------------------------------------------------------------------+
