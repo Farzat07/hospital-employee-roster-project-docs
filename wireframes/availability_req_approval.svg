@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="672" height="384" class="svgbob">
+  <style>.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
+  stroke: black;
+  stroke-width: 2;
+  stroke-opacity: 1;
+  fill-opacity: 1;
+  stroke-linecap: round;
+  stroke-linejoin: miter;
+}
+
+.svgbob text {
+  white-space: pre;
+  fill: black;
+  font-family: Iosevka Fixed, monospace;
+  font-size: 14px;
+}
+
+.svgbob rect.backdrop {
+  stroke: none;
+  fill: white;
+}
+
+.svgbob .broken {
+  stroke-dasharray: 8;
+}
+
+.svgbob .filled {
+  fill: black;
+}
+
+.svgbob .bg_filled {
+  fill: white;
+  stroke-width: 1;
+}
+
+.svgbob .nofill {
+  fill: white;
+}
+
+.svgbob .end_marked_arrow {
+  marker-end: url(#arrow);
+}
+
+.svgbob .start_marked_arrow {
+  marker-start: url(#arrow);
+}
+
+.svgbob .end_marked_diamond {
+  marker-end: url(#diamond);
+}
+
+.svgbob .start_marked_diamond {
+  marker-start: url(#diamond);
+}
+
+.svgbob .end_marked_circle {
+  marker-end: url(#circle);
+}
+
+.svgbob .start_marked_circle {
+  marker-start: url(#circle);
+}
+
+.svgbob .end_marked_open_circle {
+  marker-end: url(#open_circle);
+}
+
+.svgbob .start_marked_open_circle {
+  marker-start: url(#open_circle);
+}
+
+.svgbob .end_marked_big_open_circle {
+  marker-end: url(#big_open_circle);
+}
+
+.svgbob .start_marked_big_open_circle {
+  marker-start: url(#big_open_circle);
+}
+
+</style>
+  <defs>
+    <marker id="arrow" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0,0 0,4 4,2 0,0"></polygon>
+    </marker>
+    <marker id="diamond" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0,2 2,0 4,2 2,4 0,2"></polygon>
+    </marker>
+    <marker id="circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <circle cx="4" cy="4" r="2" class="filled"></circle>
+    </marker>
+    <marker id="open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <circle cx="4" cy="4" r="2" class="bg_filled"></circle>
+    </marker>
+    <marker id="big_open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <circle cx="4" cy="4" r="3" class="bg_filled"></circle>
+    </marker>
+  </defs>
+  <rect class="backdrop" x="0" y="0" width="672" height="384"></rect>
+  <text x="18" y="28" >HOSPITAL</text>
+  <text x="90" y="28" >ROSTER</text>
+  <text x="162" y="28" >Master</text>
+  <text x="218" y="28" >Schedule</text>
+  <text x="306" y="28" >Control</text>
+  <text x="370" y="28" >Panel</text>
+  <text x="434" y="28" >Settings</text>
+  <text x="546" y="28" >[</text>
+  <text x="562" y="28" >A.</text>
+  <text x="586" y="28" >Mooney</text>
+  <text x="642" y="28" >]</text>
+  <text x="26" y="76" >VACATION</text>
+  <text x="98" y="76" >&amp;</text>
+  <text x="114" y="76" >AVAILABILITY</text>
+  <text x="218" y="76" >APPROVAL</text>
+  <text x="290" y="76" >QUEUE</text>
+  <text x="26" y="108" >Filter</text>
+  <text x="82" y="108" >Status:</text>
+  <text x="146" y="108" >[</text>
+  <text x="162" y="108" >Pending</text>
+  <text x="226" y="108" >v</text>
+  <text x="242" y="108" >]</text>
+  <text x="34" y="156" >PHYSICIAN</text>
+  <text x="130" y="156" >DATES</text>
+  <text x="322" y="156" >TYPE</text>
+  <text x="434" y="156" >NOTES</text>
+  <text x="530" y="156" >ACTIONS</text>
+  <text x="34" y="188" >Sarah</text>
+  <text x="322" y="188" >Vacation</text>
+  <text x="434" y="188" >Family</text>
+  <text x="530" y="188" >[APP]</text>
+  <text x="578" y="188" >[REJ]</text>
+  <text x="34" y="220" >John</text>
+  <text x="322" y="220" >Busy</text>
+  <text x="362" y="220" >Period</text>
+  <text x="434" y="220" >Training</text>
+  <text x="530" y="220" >[APP]</text>
+  <text x="578" y="220" >[REJ]</text>
+  <text x="34" y="252" >Michael</text>
+  <text x="322" y="252" >Vacation</text>
+  <text x="530" y="252" >[APP]</text>
+  <text x="578" y="252" >[REJ]</text>
+  <text x="34" y="284" >Emily</text>
+  <text x="322" y="284" >Vacation</text>
+  <text x="434" y="284" >Wedding</text>
+  <text x="530" y="284" >[APP]</text>
+  <text x="578" y="284" >[REJ]</text>
+  <text x="18" y="332" >Legend:</text>
+  <text x="122" y="188" >Aug 09 - Aug 11</text>
+  <text x="122" y="220" >Aug 15 - Aug 15</text>
+  <text x="122" y="252" >Aug 22 - Aug 25</text>
+  <text x="434" y="252" >-</text>
+  <text x="122" y="284" >Sep 01 - Sep 03</text>
+  <text x="74" y="332" >[APP] = Approve (Mark as Approved)</text>
+  <text x="378" y="332" >[REJ] = Reject (Mark as Rejected)</text>
+  <g>
+    <line x1="4" y1="8" x2="660" y2="8" class="solid"></line>
+    <line x1="4" y1="8" x2="4" y2="360" class="solid"></line>
+    <line x1="148" y1="8" x2="148" y2="40" class="solid"></line>
+    <line x1="292" y1="8" x2="292" y2="40" class="solid"></line>
+    <line x1="420" y1="8" x2="420" y2="40" class="solid"></line>
+    <line x1="508" y1="8" x2="508" y2="40" class="solid"></line>
+    <line x1="660" y1="8" x2="660" y2="360" class="solid"></line>
+    <line x1="4" y1="40" x2="660" y2="40" class="solid"></line>
+    <line x1="4" y1="360" x2="660" y2="360" class="solid"></line>
+  </g>
+  <g>
+    <line x1="20" y1="136" x2="636" y2="136" class="solid"></line>
+    <line x1="20" y1="136" x2="20" y2="296" class="solid"></line>
+    <line x1="116" y1="136" x2="116" y2="296" class="solid"></line>
+    <line x1="308" y1="136" x2="308" y2="296" class="solid"></line>
+    <line x1="420" y1="136" x2="420" y2="296" class="solid"></line>
+    <line x1="516" y1="136" x2="516" y2="296" class="solid"></line>
+    <line x1="636" y1="136" x2="636" y2="296" class="solid"></line>
+    <line x1="20" y1="168" x2="636" y2="168" class="solid"></line>
+    <line x1="20" y1="200" x2="636" y2="200" class="solid"></line>
+    <line x1="20" y1="232" x2="636" y2="232" class="solid"></line>
+    <line x1="20" y1="264" x2="636" y2="264" class="solid"></line>
+    <line x1="20" y1="296" x2="636" y2="296" class="solid"></line>
+  </g>
+</svg>

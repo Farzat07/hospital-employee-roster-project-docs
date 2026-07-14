@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="672" height="448" class="svgbob">
+  <style>.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
+  stroke: black;
+  stroke-width: 2;
+  stroke-opacity: 1;
+  fill-opacity: 1;
+  stroke-linecap: round;
+  stroke-linejoin: miter;
+}
+
+.svgbob text {
+  white-space: pre;
+  fill: black;
+  font-family: Iosevka Fixed, monospace;
+  font-size: 14px;
+}
+
+.svgbob rect.backdrop {
+  stroke: none;
+  fill: white;
+}
+
+.svgbob .broken {
+  stroke-dasharray: 8;
+}
+
+.svgbob .filled {
+  fill: black;
+}
+
+.svgbob .bg_filled {
+  fill: white;
+  stroke-width: 1;
+}
+
+.svgbob .nofill {
+  fill: white;
+}
+
+.svgbob .end_marked_arrow {
+  marker-end: url(#arrow);
+}
+
+.svgbob .start_marked_arrow {
+  marker-start: url(#arrow);
+}
+
+.svgbob .end_marked_diamond {
+  marker-end: url(#diamond);
+}
+
+.svgbob .start_marked_diamond {
+  marker-start: url(#diamond);
+}
+
+.svgbob .end_marked_circle {
+  marker-end: url(#circle);
+}
+
+.svgbob .start_marked_circle {
+  marker-start: url(#circle);
+}
+
+.svgbob .end_marked_open_circle {
+  marker-end: url(#open_circle);
+}
+
+.svgbob .start_marked_open_circle {
+  marker-start: url(#open_circle);
+}
+
+.svgbob .end_marked_big_open_circle {
+  marker-end: url(#big_open_circle);
+}
+
+.svgbob .start_marked_big_open_circle {
+  marker-start: url(#big_open_circle);
+}
+
+</style>
+  <defs>
+    <marker id="arrow" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0,0 0,4 4,2 0,0"></polygon>
+    </marker>
+    <marker id="diamond" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0,2 2,0 4,2 2,4 0,2"></polygon>
+    </marker>
+    <marker id="circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <circle cx="4" cy="4" r="2" class="filled"></circle>
+    </marker>
+    <marker id="open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <circle cx="4" cy="4" r="2" class="bg_filled"></circle>
+    </marker>
+    <marker id="big_open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <circle cx="4" cy="4" r="3" class="bg_filled"></circle>
+    </marker>
+  </defs>
+  <rect class="backdrop" x="0" y="0" width="672" height="448"></rect>
+  <rect x="28" y="104" width="608" height="112" class="solid nofill" rx="0"></rect>
+  <text x="42" y="124" >PERSONAL</text>
+  <text x="114" y="124" >INFORMATION</text>
+  <text x="58" y="156" >Full</text>
+  <text x="98" y="156" >Name:</text>
+  <text x="58" y="172" >Display</text>
+  <text x="122" y="172" >Name:</text>
+  <text x="58" y="188" >Email</text>
+  <text x="106" y="188" >Address:</text>
+  <text x="186" y="156" >[</text>
+  <line x1="192" y1="160" x2="416" y2="160" class="solid"></line>
+  <text x="418" y="156" >]</text>
+  <text x="186" y="172" >[</text>
+  <line x1="192" y1="176" x2="416" y2="176" class="solid"></line>
+  <text x="418" y="172" >]</text>
+  <text x="186" y="188" >[</text>
+  <line x1="192" y1="192" x2="416" y2="192" class="solid"></line>
+  <text x="418" y="188" >]</text>
+  <text x="434" y="156" >(Required)</text>
+  <text x="434" y="172" >(Optional)</text>
+  <text x="434" y="188" >(Unique Login ID)</text>
+  <rect x="28" y="248" width="608" height="112" class="solid nofill" rx="0"></rect>
+  <text x="42" y="268" >SYSTEM</text>
+  <text x="98" y="268" >ACCESS</text>
+  <text x="154" y="268" >&amp;</text>
+  <text x="170" y="268" >ASSIGNMENT</text>
+  <text x="58" y="348" >Set</text>
+  <text x="90" y="348" >Password:</text>
+  <text x="58" y="300" >Account</text>
+  <text x="122" y="300" >Role:</text>
+  <text x="58" y="316" >Department:</text>
+  <text x="186" y="300" >[</text>
+  <text x="186" y="316" >[</text>
+  <text x="202" y="300" >Physician</text>
+  <text x="202" y="316" >Emergency</text>
+  <text x="282" y="300" >v</text>
+  <text x="298" y="300" >]</text>
+  <text x="282" y="316" >Department</text>
+  <text x="370" y="300" >Status:</text>
+  <text x="370" y="316" >v</text>
+  <text x="386" y="316" >]</text>
+  <text x="434" y="300" >[</text>
+  <text x="450" y="300" >Active</text>
+  <text x="506" y="300" >v</text>
+  <text x="522" y="300" >]</text>
+  <text x="186" y="348" >[****************] (Encrypted on Save)</text>
+  <text x="18" y="28" >HOSPITAL</text>
+  <text x="90" y="28" >ROSTER</text>
+  <text x="162" y="28" >Master</text>
+  <text x="218" y="28" >Schedule</text>
+  <text x="306" y="28" >Control</text>
+  <text x="370" y="28" >Panel</text>
+  <text x="434" y="28" >Settings</text>
+  <text x="546" y="28" >[</text>
+  <text x="562" y="28" >A.</text>
+  <text x="586" y="28" >Mooney</text>
+  <text x="642" y="28" >]</text>
+  <text x="26" y="76" >USER</text>
+  <text x="66" y="76" >ACCOUNT</text>
+  <text x="130" y="76" >MANAGEMENT</text>
+  <text x="162" y="396" >[</text>
+  <text x="178" y="396" >SAVE</text>
+  <text x="218" y="396" >ACCOUNT</text>
+  <text x="282" y="396" >]</text>
+  <text x="418" y="396" >[</text>
+  <text x="434" y="396" >CANCEL</text>
+  <text x="490" y="396" >]</text>
+  <text x="218" y="76" >(Create/Edit Profile)</text>
+  <g>
+    <line x1="4" y1="8" x2="660" y2="8" class="solid"></line>
+    <line x1="4" y1="8" x2="4" y2="424" class="solid"></line>
+    <line x1="148" y1="8" x2="148" y2="40" class="solid"></line>
+    <line x1="292" y1="8" x2="292" y2="40" class="solid"></line>
+    <line x1="420" y1="8" x2="420" y2="40" class="solid"></line>
+    <line x1="508" y1="8" x2="508" y2="40" class="solid"></line>
+    <line x1="660" y1="8" x2="660" y2="424" class="solid"></line>
+    <line x1="4" y1="40" x2="660" y2="40" class="solid"></line>
+    <line x1="4" y1="424" x2="660" y2="424" class="solid"></line>
+  </g>
+</svg>
